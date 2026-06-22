@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Ciclovias Recife",
+    "slug": "ciclovias-recife",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1B4332"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.seuusuario.ciclobiasrecife",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Este app usa sua localização para mostrar ciclovias próximas a você.",
+        "NSLocationAlwaysUsageDescription": "Este app usa sua localização para monitorar ciclovias próximas."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1B4332"
+      },
+      "package": "com.seuusuario.ciclobiasrecife",
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Este app precisa de acesso à sua localização para mostrar ciclovias próximas."
+        }
+      ]
+    ]
+  }
+}
