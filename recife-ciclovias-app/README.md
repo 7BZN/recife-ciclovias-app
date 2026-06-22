@@ -112,16 +112,5 @@ npx expo start --ios
 
 ---
 
-## 🖼️ Capturas de Tela
-
-> Insira as capturas de tela aqui após executar o projeto:
-> - `screenshots/splash.png`
-> - `screenshots/home.png`
-> - `screenshots/lista.png`
-> - `screenshots/detalhes.png`
-> - `screenshots/mapa.png`
-> - `screenshots/historico.png`
-
----
 
 
