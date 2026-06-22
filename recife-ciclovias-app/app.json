@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#1B4332"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.seuusuario.ciclobiasrecife",
@@ -40,7 +42,8 @@
         {
           "locationAlwaysAndWhenInUsePermission": "Este app precisa de acesso à sua localização para mostrar ciclovias próximas."
         }
-      ]
+      ],
+      "expo-asset"
     ]
   }
 }
