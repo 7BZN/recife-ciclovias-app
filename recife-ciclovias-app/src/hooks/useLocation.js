@@ -1,20 +1,5 @@
 // ============================================================
 // src/hooks/useLocation.js
-//
-// Hook customizado para geolocalização com expo-location.
-//
-// Responsabilidades:
-//   1. Solicitar permissão de localização ao usuário
-//   2. Capturar latitude e longitude atuais
-//   3. Atualizar a localização periodicamente
-//   4. Tratar erros de permissão negada / GPS desligado
-//   5. Limpar o watcher ao desmontar o componente
-//
-// Por que expo-location?
-//   - API unificada para iOS e Android
-//   - Sem necessidade de configuração nativa extra no Expo Go
-//   - Suporte a watchPosition (atualização contínua)
-//   - Retorna Promise — fácil de usar com async/await
 // ============================================================
 
 import { useState, useEffect, useCallback } from 'react';

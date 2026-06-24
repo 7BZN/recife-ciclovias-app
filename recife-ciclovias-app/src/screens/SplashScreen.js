@@ -1,17 +1,5 @@
 // ============================================================
 // src/screens/SplashScreen.js
-//
-// Tela de carregamento inicial exibida ao abrir o app.
-//
-// Responsabilidades:
-//   - Exibir logo e nome do app
-//   - Simular um breve carregamento (pode ser substituído
-//     por inicialização real: carregar cache, verificar token, etc.)
-//   - Redirecionar para MainTabs após 2.5 segundos
-//
-// Design:
-//   - Fundo verde Recife com logo centralizado
-//   - Animação de fade-in
 // ============================================================
 
 import React, { useEffect, useRef } from 'react';
@@ -24,19 +12,19 @@ import {
 } from 'react-native';
 
 export default function SplashScreen({ navigation }) {
-  // Valor animado para o efeito de fade-in (começa invisível)
+  // Valor animado para o efeito de fade-in
   const opacidade = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
     // Animação de entrada: fade-in em 1 segundo
     Animated.timing(opacidade, {
-      toValue: 1,       // opacidade final = 1 (completamente visível)
+      toValue: 1,       // opacidade final = 1
       duration: 1000,
       useNativeDriver: true, // usa GPU para melhor performance
     }).start();
 
     // Após 2.5 segundos, navega para as abas principais
-    // replace: substitui a Splash na pilha (impede de voltar)
+    // replace: substitui a Splash na pilha 
     const timer = setTimeout(() => {
       navigation.replace('MainTabs');
     }, 2500);
@@ -75,7 +63,7 @@ export default function SplashScreen({ navigation }) {
 const estilos = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1B4332', // verde escuro — identidade visual
+    backgroundColor: '#1B4332', 
     justifyContent: 'center',
     alignItems: 'center',
   },

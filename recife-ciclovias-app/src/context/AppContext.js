@@ -7,9 +7,6 @@ import React, { createContext, useContext, useState, useCallback } from 'react';
 // 1. Criação do contexto com valor padrão undefined
 const AppContext = createContext(undefined);
 
-// ============================================================
-// AppProvider — componente que envolve toda a aplicação
-// ============================================================
 export function AppProvider({ children }) {
   // Estado da localização: objeto { latitude, longitude } ou null
   const [userLocation, setUserLocation] = useState(null);
@@ -51,10 +48,6 @@ export function AppProvider({ children }) {
   );
 }
 
-// ============================================================
-// useAppContext — hook customizado para consumir o contexto
-// Lança erro se usado fora do AppProvider (segurança em dev)
-// ============================================================
 export function useAppContext() {
   const context = useContext(AppContext);
   if (context === undefined) {

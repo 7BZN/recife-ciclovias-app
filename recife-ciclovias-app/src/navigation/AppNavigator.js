@@ -20,9 +20,7 @@ import HistoricoScreen from '../screens/HistoricoScreen';
 const Stack = createStackNavigator();
 const Tab   = createBottomTabNavigator();
 
-// ============================================================
-// MainTabs — Bottom Tab Navigator com 4 abas principais
-// ============================================================
+
 function MainTabs() {
   return (
     <Tab.Navigator
@@ -62,9 +60,6 @@ function MainTabs() {
   );
 }
 
-// ============================================================
-// AppNavigator — Stack raiz que engloba tudo
-// ============================================================
 export default function AppNavigator() {
   return (
     // NavigationContainer: obrigatório — provê o contexto de navegação
